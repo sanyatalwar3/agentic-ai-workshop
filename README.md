@@ -42,7 +42,7 @@ This makes the AI assistant:
 - Uses RAG to answer questions from uploaded files  
 - Uses a Web Search Tool for external/live information  
 - Uses a Calculator Tool for calculations  
-- Uses MCP for tool communication  
+- Uses MCP for tool communication 
 - Uses LangGraph for workflow orchestration  
 - Routes queries intelligently to the correct tool  
 - Generates grounded responses  
@@ -70,3 +70,38 @@ This makes the AI assistant:
 **Clone the github repository**
 ```bash
 git clone <PASTE YOUR GITHUB REPO LINK HERE>
+```
+```bash
+****Windows
+python -m venv venv
+venv\Scripts\activate
+```
+```bash
+Mac/Linux
+python3 -m venv venv
+source venv/bin/activate
+```
+```bash
+Install all required python packages
+
+pip install -r requirements.txt
+```
+```bash
+**** Create a file to store your api keys (.env) & add your api keys
+
+NVIDIA_API_KEY=nvapi-xxxxxxxxxxxxxxxx
+
+TAVILY_API_KEY=tvly-xxxxxxxxxxxxxxxx
+```
+```bash
+Run the streamlit application
+
+streamlit run main.py
+```
+Important Notes:
+The vector database is created locally on your system
+Users can upload multiple files
+The AI assistant dynamically selects tools depending on the query
+Web queries require internet access
+Do NOT upload your .env file or API keys to GitHub
+To reset everything, delete the chroma folder or use the clear option if available
