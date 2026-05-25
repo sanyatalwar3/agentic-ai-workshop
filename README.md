@@ -71,34 +71,32 @@ This makes the AI assistant:
 ```bash
 git clone <PASTE YOUR GITHUB REPO LINK HERE>
 ```
-```bash
 ****Windows
+```bash
 python -m venv venv
 venv\Scripts\activate
 ```
+****Mac/Linux
 ```bash
-Mac/Linux
 python3 -m venv venv
 source venv/bin/activate
 ```
+****Install all required python packages
 ```bash
-Install all required python packages
-
 pip install -r requirements.txt
 ```
+****Create a file to store your api keys (.env) & add your api keys
 ```bash
-**** Create a file to store your api keys (.env) & add your api keys
-
 NVIDIA_API_KEY=nvapi-xxxxxxxxxxxxxxxx
 
 TAVILY_API_KEY=tvly-xxxxxxxxxxxxxxxx
 ```
+****Run the streamlit application
 ```bash
-Run the streamlit application
-
 streamlit run main.py
 ```
-Important Notes:
+
+## Important Notes:
 The vector database is created locally on your system
 Users can upload multiple files
 The AI assistant dynamically selects tools depending on the query
