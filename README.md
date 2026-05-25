@@ -71,27 +71,27 @@ This makes the AI assistant:
 ```bash
 git clone <PASTE YOUR GITHUB REPO LINK HERE>
 ```
-****Windows
+**Windows
 ```bash
 python -m venv venv
 venv\Scripts\activate
 ```
-****Mac/Linux
+**Mac/Linux
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
-****Install all required python packages
+**Install all required python packages
 ```bash
 pip install -r requirements.txt
 ```
-****Create a file to store your api keys (.env) & add your api keys
+**Create a file to store your api keys (.env) & add your api keys
 ```bash
 NVIDIA_API_KEY=nvapi-xxxxxxxxxxxxxxxx
 
 TAVILY_API_KEY=tvly-xxxxxxxxxxxxxxxx
 ```
-****Run the streamlit application
+**Run the streamlit application
 ```bash
 streamlit run main.py
 ```
