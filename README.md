@@ -97,9 +97,9 @@ streamlit run main.py
 ```
 
 ## Important Notes:
-The vector database is created locally on your system
-Users can upload multiple files
-The AI assistant dynamically selects tools depending on the query
-Web queries require internet access
-Do NOT upload your .env file or API keys to GitHub
-To reset everything, delete the chroma folder or use the clear option if available
+- The vector database is created locally on your system
+- Users can upload multiple files
+- The AI assistant dynamically selects tools depending on the query
+- Web queries require internet access
+- Do NOT upload your .env file or API keys to GitHub
+- To reset everything, delete the chroma folder or use the clear option if available
